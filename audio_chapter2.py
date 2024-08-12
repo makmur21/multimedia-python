@@ -1,4 +1,5 @@
 from pydub import AudioSegment
+import simpleaudio as sa
 
 # Memuat file audio
 audio = AudioSegment.from_file('audio.mp3')
@@ -16,3 +17,6 @@ audio.export('result.wav', format='wav')
 
 louder_audio = audio + 10  # Meningkatkan volume sebesar 10dB
 louder_audio.export('louder_result.mp3', format='mp3')
+
+if filtered_image.mode == 'RGBA': # type: ignore
+    filtered_image = filtered_image.convert('RGB') # type: ignore
